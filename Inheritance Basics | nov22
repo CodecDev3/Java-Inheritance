@@ -1,0 +1,36 @@
+// Coded on 01/11/22
+
+import java.util.*;
+
+public class Main extends second{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        second s = new second();
+        
+        System.out.println(s.spa + " " + s.spb);
+        s.sf();
+    }
+}
+
+class second extends third{
+    public int p = 10;
+    protected int pp = 20;
+    third t = new third();
+    
+    int spa = t.a;
+    int spb = t.b;
+    //int spc = t.c;
+    
+    void sf(){
+        int n = 800;
+        System.out.println("Calling second sf Successful");
+    }
+}
+
+class third{
+    public int a = 300;
+    protected int b = 400;
+    private int c = 500;
+    
+}
+
